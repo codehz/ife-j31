@@ -13,11 +13,11 @@ body
     .tab(data-for="student")
       span 学校
       .content
-        select(name="city")
+        select#city-select(name="city", onchange="updateSchools()")
           option(value="beijing") 北京
           option(value="shanghai") 上海
           option(value="zhejiang") 浙江
-        select#city-select(name="school")
+        select#school-select(name="school")
     .tab(data-for="nonstudent")
       span 就业单位
       .content

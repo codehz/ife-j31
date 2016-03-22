@@ -1,5 +1,6 @@
 .tab {
   display: none;
+  margin-top: 20px;
   flex-basis: 100%;
 }
 form {
@@ -24,6 +25,9 @@ form {
 }
 .tab .content select {
   width: 200px;
+}
+.tab .content input {
+  width: 100%;
 }
 #student:checked ~ .tab[data-for="student"] {
   display: flex;
